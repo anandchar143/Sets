@@ -1,0 +1,14 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Q8MonthNum {
+ public static String monthDiff(Date d1){
+  SimpleDateFormat sdf=new SimpleDateFormat("MMMM");
+  String s=(sdf.format(d1));
+  return s;
+ }
+ public static void main(String[] args) {
+  Date d1=new Date(23/01/2012);
+  System.out.println(monthDiff(d1));
+ }
+}
